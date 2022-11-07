@@ -1,12 +1,26 @@
+import java.util.Scanner;
 public class Triangle {
-    int a;
-    int b;
-    int c;
+    Scanner input = new Scanner(System.in);
+    private String name;
+    private int age;
+    public void setName(String userName) {
+        name = userName;
+    }
 
-    public void area(){
-        double p = a+b+c;
-        double q = p/2;
-        double s = Math.sqrt(q*(q-a)*(q-b)*(q-c));
-        System.out.print("Площадь треугольника: "+s);
+    public String getName() {
+        return name;
+    }
+
+    public void setNumber(int userAge) {
+            age = userAge;
+    }
+
+    public int getNumber() {
+        return age;
+    }
+
+    public void method(){
+        System.out.println("Меня зовут "+name+". Мне "+age+" лет!");
     }
 }
+
